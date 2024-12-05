@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Pemantauan Bencana dan Cuaca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+    <h1>WebGIS Pemantauan Bencana dan Cuaca</h1>
+    <div id="map"></div>
+    <div id="button-container">
+        <button onclick="changeLayer('osm')">OpenStreetMap</button>
+        <button onclick="changeLayer('stamen-terrain')">Stamen Terrain</button>
+        <button onclick="changeLayer('stamen-toner')">Stamen Toner</button>
+    </div>
+    <div id="disaster-data"></div>
+    <div id="weather-data"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
